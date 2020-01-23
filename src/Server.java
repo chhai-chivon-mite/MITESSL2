@@ -51,6 +51,8 @@ public class Server {
 				System.out.println("Waiting client...");
 				SSLSocket connection = (SSLSocket) sslServerSocket.accept();
 				
+				System.out.println("Already Accept");
+				
 				// Read from Client 
 				Scanner scanner  = new Scanner(connection.getInputStream());
 				while(scanner.hasNext()) {
